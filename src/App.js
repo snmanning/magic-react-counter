@@ -8,12 +8,25 @@ class App extends Component {
         count:0
       };
     }
+  
+  increment() {
+    this.setState({
+      count: this.state.count + 1
+    });
+  }
+
+  decrement() {
+    this.setState({
+      count: this.state.count - 1
+    })
+  }  
+
   render() {
     return (
       <div>
-        <button onClick={() => alert('yayyyy')}>+</button>
+        <button onClick={this.increment.bind(this)}>+</button>
         <h1>{this.state.count}</h1>
-        <button onClick={() => alert('noooooo')}>-</button>
+        <button onClick={this.decrement.bind(this)}>-</button>
       </div>
     );
   }
