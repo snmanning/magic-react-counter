@@ -30,7 +30,7 @@ class Counter extends Component {
     render () {
         return (
             <div>
-                <h1>{this.props.title}</h1>
+                {this.props.title ? <h1>{this.props.title}</h1> : null}
                 <button onClick={this.increment.bind(this)}>+</button>
                 <p>{this.state.count}</p>
                 <button onClick={this.decrement.bind(this)}>-</button>
