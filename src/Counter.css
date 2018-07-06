@@ -1,0 +1,39 @@
+.Counter-title {
+    font-family: 'Comic Sans MS', sans-serif;
+
+}
+
+.Counter-button {
+    appearance: none;
+    border: none;
+    background-color: chartreuse;
+    border-radius: 20%;
+    width: 3rem;
+}
+
+.Counter-input {
+    appearance: none;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.Counter-display {
+    width: 30%;
+    height: 2rem;
+    font-size: 1.5rem;
+    background-color: white;
+}
+
+.Counter-container {
+    display: flex;
+    flex-direction: column;
+    border: 2px dashed purple;
+    background-color: burlywood;
+    align-items: center;
+}
+
+.Counter-container section {
+    display: flex;
+    justify-content: space-around;
+}
